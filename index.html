@@ -1,25 +1,33 @@
-<html lang="en">
+<html lang="en" onkeypress="jump()">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <title>Endless Runers</title>
+<link rel="stylesheet" href="assets/css/styles.css">    
+<title>Endless Runers</title>
 </head>
 <body>
 
-    <header>
+    <header class="titulo">
         Run til your die!
     </header>
 
-    <div>
-        <div>
-            <button>Incio</button>
-            <button>Pausa</button>
-            <button>Nueva Partida</button>
+    <div id="Botones" class="row mt-2">
+        <div class="col text-center">
+            <button id="btnStart" class="btn btn-success">Inicio</button>
+            <button id="btnPause" class="btn btn-danger">Pausa</button>
+            <button id="btnNew" class="btn btn-primary">Nueva Partida</button>
         </div>
     </div>
+
+    <div id="game">
+        <div id="player"></div>
+        <div id="enemy"></div>
+    </div>
+    
+    <script src="assets/js/app.js"></script>
     
 </body>
 </html>
